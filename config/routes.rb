@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'contact' => 'pages#contact'
+  get '/webuy' => 'pages#webuy'
+  get '/products' => 'pages#products'
   get '/about' => 'pages#about'
   root 'pages#home'
 
