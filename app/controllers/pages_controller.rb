@@ -10,7 +10,4 @@ class PagesController < ApplicationController
 
   def webuy
   end
-
-  def contact
-  end
 end
