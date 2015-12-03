@@ -54,12 +54,11 @@
           <%= f.email_field :email, class: 'form-control' %>
         </div>
         <div class="form-group">
-          <%= f.label :phone %>
-          <%= f.text_field :phone, class: 'form-control' %>
-        </div>
-        <div class="form-group">
           <%= f.label :comments %>
           <%= f.text_area :comments, class: 'form-control' %>
+        </div>
+        <div class="hidden">
+          <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
         </div>
         <%= f.submit 'Submit', class: 'btn btn-default' %>
       <% end %>
